@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.square {
+  height: 90px;
+  width: 1152px;
+  background-color: #6199DA;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+</style>
+<script>
+  function clickedButton() {
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', '/clicked', true);
+    xhr.send('The button was clicked!');
+  }
+</script>
+</head>
+
+<body>
+
+<div class="square"></div>
+<h1 style="z-index: 1; position: absolute; top: 0px; left: 0px; color: white; ">Chewy Active</h1>
+<br><br><br><br><br>
+
+<h1><center>Coin amount</center></h1>
+<div id="backdrop"><center><img alt="" src='https://lh3.googleusercontent.com/proxy/c7CCf0cSJXEtwsmTdszjPuL0YW8MZfaU9wf971G53qc9v_YrSHH2DDDwOiEQnvJAs02CpDt6d8c0ufmEmy_ANiCzp9l73ZJKRZCSIHaZ7E4DEcNbtdY' / width="100" height="100" ></center></div>
+<div class="features">
+<div style="position:absolute; top:330px; left:100px" ><a href="start"><button onclick="clickedButton()"><h1>Start</h1></button></a></div>
+<div style="position:absolute; top:330px; left:300px"><button onclick="clickedButton()"><h1>History</h1></button></div>
+<div style="position:absolute; top:330px; left:500px"><button onclick="clickedButton()"><h1>Rewards</h1></button></div>
+
+
+</div>
+
+
+</body>
+</html> 
